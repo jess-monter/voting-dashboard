@@ -1,6 +1,8 @@
 import React, { useEffect }  from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import {getData} from '../../actions'
+import BarChart from '../../components/Graph';
+
 
 const Dashboard = () => {
   const dispatch = useDispatch();
@@ -12,6 +14,7 @@ const Dashboard = () => {
   return (
     <div>
       <h1>Dashboard</h1>
+      <BarChart />
     </div>
 );
 };
